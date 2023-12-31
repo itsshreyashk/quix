@@ -9,7 +9,7 @@ import connectDB from './db';
 const app = express();
 const server = http.createServer(app);
 const PORT = 3001; // Setting up the PORT - Hope it's not lost at sea!
-
+connectDB();
 app.use(cors()); // Using CORS because sharing is caring, even for servers.
 dotenv.config(); // Configuring environment variables - Secrets, like hiding snacks in the server room.
 app.get('/', (req: Request, res: Response) => {
