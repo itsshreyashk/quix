@@ -1,7 +1,10 @@
+/*Necessary imports*/
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import http from 'http';
 import dotenv from 'dotenv';
+import connectDB from './db';
+
 
 const app = express();
 const server = http.createServer(app);
