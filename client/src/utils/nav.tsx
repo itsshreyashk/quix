@@ -11,7 +11,7 @@ export default function Nav() {
                     <div className="flex items-center space-x-4">
                         <Link to="/" className="text-white hover:text-gray-300 text-sm transition duration-300">Home</Link>
                         <Link to="/boards" className="text-white hover:text-gray-300 text-sm transition duration-300">Boards</Link>
-                        <Link to="http://www.google.com" className="text-white hover:text-gray-300 text-sm transition duration-300">Github</Link>
+                        <Link to="https://github.com/itsshreyashk/quix" className="text-white hover:text-gray-300 text-sm transition duration-300">Github</Link>
                         {/* Add more links as needed */}
                     </div>
                 </div>

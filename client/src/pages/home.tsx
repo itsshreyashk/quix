@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Nav from '../utils/nav'
 
+
+/* How it will work?
+- A POST request will be sent to the server containing the requested quiz ID. If it will be available then the server shall return 'OK' or else it should dismiss the request.
+If the server respond with a OK, a passkey will be sent to the client for connecting (the passkey was created by the quiz admin at the time of creating the quiz). The whole quiz will be hosted on /quiz_id/pass=PASS_KEY.
+Any user therefore cannot connect the game multiple times and bots will be prevented. Once reached the max limit, the server shall respond with response "MAX" and it will be displayed.
+
+*/
 export default function Home() {
+    const [connect, updateConnect] : any = useState('Connect'); //will update connect to connecting while searching for a group.
+    useEffect(() => {
+
+      return () => {
+      }
+    }, [])
+    
     return (
         <>
             <Nav />
@@ -26,7 +40,7 @@ export default function Home() {
                         />
                     </div>
                     <button className="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md focus:outline-none">
-                        Connect
+                        {connect}
                     </button>
                 </div>
             </div>
