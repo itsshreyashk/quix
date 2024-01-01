@@ -49,3 +49,5 @@ This project is licensed under the MIT License - please refer to the LICENSE.md 
 | Version Control       | Git                                             |
 | Hosting               | Localhost (for local testing)                   |
 | License               | MIT License                                     |
+
+![image](https://github.com/itsshreyashk/quix/assets/147302693/229e2c8c-3641-46ff-b4c9-b6149a71e7bb)
