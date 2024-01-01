@@ -15,7 +15,6 @@ dotenv.config(); // Configuring environment variables - Secrets, like hiding sna
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello world'); // Sending greetings to the vast digital cosmos.
 });
-
 server.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`); // Broadcasting to the localhost neighborhood. 
 });
