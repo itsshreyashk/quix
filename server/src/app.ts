@@ -4,6 +4,7 @@ import cors from 'cors';
 import http from 'http';
 import dotenv from 'dotenv';
 import connectDB from './db';
+import * as io from 'socket.io';
 
 
 const app = express();
