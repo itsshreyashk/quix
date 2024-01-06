@@ -6,6 +6,8 @@ import dotenv from 'dotenv';
 import connectDB from './db';
 import * as io from 'socket.io';
 
+//for push
+
 
 const app = express();
 const server = http.createServer(app);
